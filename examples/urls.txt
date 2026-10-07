@@ -1,4 +1,4 @@
 # One YouTube URL or local media path per line.
-# Blank lines and comments are ignored. Remove the placeholder before running.
-# https://www.youtube.com/watch?v=VIDEO_ID
+# Blank lines and comments are ignored. Replace or extend this example as needed.
+https://www.youtube.com/watch?v=DEpe7VdDfpY
 # C:\Media\lecture.m4a

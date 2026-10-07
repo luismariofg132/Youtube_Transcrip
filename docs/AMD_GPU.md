@@ -27,7 +27,7 @@ ffmpeg -i "C:\Media\lecture.mp4" -ar 16000 -ac 1 -c:a pcm_s16le "downloads/input
 For a YouTube URL, first download one audio stream:
 
 ```powershell
-.\.venv\Scripts\python.exe -m yt_dlp --js-runtimes node -f bestaudio -o "downloads/input.%(ext)s" "https://www.youtube.com/watch?v=VIDEO_ID"
+.\.venv\Scripts\python.exe -m yt_dlp --js-runtimes node -f bestaudio -o "downloads/input.%(ext)s" "https://www.youtube.com/watch?v=DEpe7VdDfpY"
 ```
 
 Use the actual downloaded filename with FFmpeg in place of `lecture.mp4`. Check whisper.cpp's startup logs for the selected Vulkan device; a successful CLI run alone does not prove GPU acceleration. Its TXT/SRT output differs from this application's TXT/JSON format.

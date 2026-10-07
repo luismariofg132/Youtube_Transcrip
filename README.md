@@ -82,7 +82,7 @@ Linux installation is documented from upstream instructions; the GPU integration
 Examples below assume `python` refers to the installed environment. On Windows you can use `.\.venv\Scripts\python.exe` explicitly instead.
 
 ```bash
-python transcribe.py "https://www.youtube.com/watch?v=VIDEO_ID"
+python transcribe.py "https://www.youtube.com/watch?v=DEpe7VdDfpY"
 python transcribe.py "/path/to/lecture.mp4" --device cpu
 python transcribe.py --list examples/urls.txt --language es
 python transcribe.py --language auto "/path/to/audio.wav"
@@ -90,7 +90,7 @@ python transcribe.py --device cuda --batch-size 4 "/path/to/audio.m4a"
 python transcribe.py --no-timestamps --output-dir transcripts "/path/to/audio.mp3"
 ```
 
-Replace `VIDEO_ID` with a real 11-character video ID. To process several sources, pass multiple quoted arguments or put one source per line in a UTF-8 list file. Blank lines and `#` comments are ignored. Replace the commented placeholders in `examples/urls.txt` before using it. Relative file paths are resolved from the console's current working directory. Videos are processed in full; playlists and channels are not supported.
+Replace the example URL with any YouTube video you want to transcribe. To process several sources, pass multiple quoted arguments or put one source per line in a UTF-8 list file. Blank lines and `#` comments are ignored. `examples/urls.txt` contains the same example video; replace or extend it as needed. Relative file paths are resolved from the console's current working directory. Videos are processed in full; playlists and channels are not supported.
 
 On Windows, double-click `TRANSCRIBE.cmd`, enter one or more sources, and submit an empty line to start. You can also drag local media onto it. Helpers:
 
