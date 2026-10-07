@@ -45,11 +45,10 @@ def resolve_model(model_name: str) -> str:
     if explicit_path.is_dir():
         return str(explicit_path.resolve())
 
-    for cache_directory in (ROOT / "models", ROOT / "modelos"):
-        repository = cache_directory / f"models--Systran--faster-whisper-{model_name}"
-        reference = repository / "refs" / "main"
-        if reference.is_file():
-            snapshot = repository / "snapshots" / reference.read_text(encoding="utf-8").strip()
-            if (snapshot / "model.bin").is_file():
-                return str(snapshot)
+    repository = ROOT / "models" / f"models--Systran--faster-whisper-{model_name}"
+    reference = repository / "refs" / "main"
+    if reference.is_file():
+        snapshot = repository / "snapshots" / reference.read_text(encoding="utf-8").strip()
+        if (snapshot / "model.bin").is_file():
+            return str(snapshot)
     return model_name

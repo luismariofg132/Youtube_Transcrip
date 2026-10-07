@@ -11,11 +11,8 @@ vendor/
 
 # Models, source media, generated transcripts and local benchmarks
 models/
-modelos/
 downloads/
-descargas/
 transcripts/
-transcripciones/
 *.m4a
 *.mp3
 *.mp4
@@ -29,18 +26,8 @@ transcripciones/
 
 # Machine-specific paths, user sources and settings
 config.json
-configuracion.json
 python_local.txt
 /urls.txt
-enlaces_ejemplo.txt
-PRUEBA_GPU.md
-LEEME.md
-transcribir.py
-TRANSCRIBIR.cmd
-INSTALAR.cmd
-DIAGNOSTICO.cmd
-ACTUALIZAR_YOUTUBE.cmd
-PYTHON.cmd
 .env
 .env.*
 
