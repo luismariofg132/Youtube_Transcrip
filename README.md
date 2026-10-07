@@ -1,5 +1,7 @@
 # YouTube Transcriber
 
+Repository: [luismariofg132/Youtube_Transcrip](https://github.com/luismariofg132/Youtube_Transcrip).
+
 Transcribe YouTube videos and local audio/video files into timestamped UTF-8 text using [faster-whisper](https://github.com/SYSTRAN/faster-whisper). Speech recognition runs locally, with NVIDIA CUDA or CPU inference. Each transcript includes a JSON processing report.
 
 The code, CLI options, comments, and report fields are in English. Speech is transcribed in its original language; the default is Spanish (`es`). No API key is required.
@@ -31,7 +33,14 @@ The Git repository contains source code, configuration examples, and documentati
 
 ## CPU setup (Windows, Linux, and macOS)
 
-Clone your copy of this repository, then open its directory. On Windows PowerShell:
+Clone the repository and open its directory:
+
+```bash
+git clone https://github.com/luismariofg132/Youtube_Transcrip.git
+cd Youtube_Transcrip
+```
+
+On Windows PowerShell:
 
 ```powershell
 py -3.12 -m venv .venv
@@ -140,14 +149,15 @@ The original Windows benchmark used an RTX 3050 Laptop GPU with 4 GB VRAM, model
 
 ## Publish your repository
 
-Create an empty repository on GitHub, then run from this folder:
+To publish changes to [Youtube_Transcrip](https://github.com/luismariofg132/Youtube_Transcrip), commit them and push from the repository directory:
 
 ```bash
-git remote add origin https://github.com/YOUR_USERNAME/YOUR_REPOSITORY.git
-git push -u origin main
+git add .
+git commit -m "Describe your change"
+git push origin main
 ```
 
-If there is no commit yet, first run `git add .` and `git commit -m "Initial commit"`. Replace the placeholders with your repository URL. `.gitignore` keeps local runtimes, models, media, transcripts, and private settings out of the commit.
+Cloning configures `origin` automatically. For an existing local repository without a remote, run `git remote add origin https://github.com/luismariofg132/Youtube_Transcrip.git` once, then use `git push -u origin main` for the first push. `.gitignore` keeps local runtimes, models, media, transcripts, and private settings out of the commit.
 
 ## License
 
