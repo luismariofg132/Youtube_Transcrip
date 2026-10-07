@@ -1,0 +1,7 @@
+{
+  "model": "small",
+  "language": "es",
+  "device": "auto",
+  "batch_size": 1,
+  "cpu_threads": 8
+}
